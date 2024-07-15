@@ -14,6 +14,9 @@ class TestPower(unittest.TestCase):
     def test_power_float(self):
         self.assertEqual(power_num(1.5, 2), 2.25)
     
+    def test_power_int(self):
+        self.assertEqual(power_num(3, 3), 27)
+    
     def test_for_list_as_number(self):
         with self.assertRaises(TypeError):
             power_num([], 2)
